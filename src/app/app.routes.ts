@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'uno',
+    loadComponent: () => import('./uno/uno.page').then( m => m.UnoPage)
+  },
 ];
