@@ -14,4 +14,8 @@ export const routes: Routes = [
     path: 'uno',
     loadComponent: () => import('./uno/uno.page').then( m => m.UnoPage)
   },
+  {
+    path: 'dos',
+    loadComponent: () => import('./dos/dos.page').then( m => m.DosPage)
+  },
 ];
